@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>🚌 Bangalore Transportation Tracker 🚇</h1>
+        <h1>🚌 Bengaluru Transportation Tracker 🚇</h1>
         <p className="subtitle">Real-time buses and metro trains information</p>
       </header>
 
