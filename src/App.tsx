@@ -3,6 +3,7 @@ import './App.css';
 import { SearchBar } from './components/SearchBar';
 import { BusesComponent } from './components/BusesComponent';
 import { TrainsComponent } from './components/TrainsComponent';
+import { Clock } from './components/Clock';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -16,8 +17,13 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>🚌 Bengaluru Transportation Tracker 🚇</h1>
-        <p className="subtitle">Real-time buses and metro trains information</p>
+        <div className="header-content">
+          <div className="header-title">
+            <h1>🚌 Bengaluru Transportation Tracker 🚇</h1>
+            <p className="subtitle">Real-time buses and metro trains information</p>
+          </div>
+          <Clock />
+        </div>
       </header>
 
       <SearchBar onSearch={handleSearch} />
